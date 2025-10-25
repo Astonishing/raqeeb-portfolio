@@ -1,3 +1,10 @@
+ * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
         height: 100vh;
         display: flex;
         align-items: center;
@@ -141,12 +148,12 @@
       }
 
       .card-icons a:hover img {
-        transform: scale(1.2); /* grows slightly on hover */
-        filter: brightness(1); /* brighter on hover */
+        transform: scale(1.2); 
+        filter: brightness(1); 
       }
       .intro {
         position: absolute;
-        top: 210px; /* right below the profile pic */
+        top: 210px; 
         left: 50%;
         transform: translateX(-50%) translateZ(60px);
         text-align: center;
@@ -164,7 +171,7 @@
         text-align: center;
         color: #fff;
         z-index: 5;
-        font-family: "Poppins", sans-serif; /* clean, modern font */
+        font-family: "Poppins", sans-serif; 
         width: 90%;
         text-shadow: 0 0 12px rgba(166, 214, 166, 0.3);
       }
@@ -196,7 +203,7 @@
         font-family: "Inter", sans-serif;
         perspective: 1000px;
         overflow: hidden;
-        /* set texture as background */
+       
         background-image: url("Assets/BG-Texture.jpg");
         background-size: cover;
         background-position: center;
@@ -204,7 +211,7 @@
         background-attachment: fixed;
       }
 
-      /* Popup Background */
+      
       .project-popup {
         position: fixed;
         inset: 0;
@@ -219,13 +226,13 @@
         z-index: 100;
       }
 
-      /* Show Popup */
+     
       .project-popup.active {
         visibility: visible;
         opacity: 1;
       }
 
-      /* Popup Card */
+      
       .project-content {
         width: 600px;
         max-width: 90%;
@@ -245,7 +252,7 @@
         transform: scale(1);
       }
 
-      /* Close Button */
+     
       .close-btn {
         position: absolute;
         top: 15px;
@@ -260,7 +267,7 @@
         color: #00ff80;
       }
 
-      /* Popup text and image */
+      
       .project-content h2 {
         font-size: 1.8rem;
         background: linear-gradient(90deg, #00ff80, #38bdf8);
@@ -283,7 +290,7 @@
         box-shadow: 0 0 20px rgba(0, 255, 128, 0.2);
       }
 
-      /* Expand effect */
+     
       .card.expanded {
         width: 800px;
         height: 520px;
@@ -292,7 +299,7 @@
         transform: scale(1.05);
       }
 
-      /* Project Section */
+      
       .projects-section {
         display: none;
         opacity: 0;
@@ -361,9 +368,9 @@
 
       .top-icons a {
         display: flex;
-        flex-direction: column; /* stack text below icon */
-        align-items: center; /* center text under icon */
-        gap: 2px; /* small space between icon and text */
+        flex-direction: column;
+        align-items: center; 
+        gap: 2px; 
         color: white;
         text-decoration: none;
         font-family: "Inter", sans-serif;
@@ -380,11 +387,11 @@
       .icon-with-text {
         display: flex;
         align-items: center;
-        gap: 4px; /* controls space between icon & text */
-        font-size: 0.85rem; /* optional: adjust text size */
+        gap: 4px; 
+        font-size: 0.85rem; 
       }
 
       .icon-with-text span {
         opacity: 0.9;
-        margin: 0; /* remove extra margin */
+        margin: 0; 
       }

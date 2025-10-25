@@ -9,33 +9,75 @@
   <link rel="stylesheet" href="style.css" />
   <body>
     <div class="card" id="card">
+      <div class="top-icons">
+        <a
+          href="mailto:raqeebpython@gmail.com"
+          target="_blank"
+          class="top-right icon-with-text"
+        >
+          <img src="Assets/mail.png" alt="Mail" width="25" />
+          <span>Contact</span>
+        </a>
+      </div>
+
       <div class="pfp">
         <img src="Assets/rrrr.jpg" alt="pfp" />
       </div>
 
-      <img src="Assets/BG-Texture.jpg" alt="BG" />
+      <div class="intro">
+        <h2>I'm Raqeeb</h2>
+        <p style="color: #000000; font-weight: 200">
+          A Full-stack Web Developer and Bug Hunter who loves building and
+          breaking things. I often do competitive programming and I also enjoy
+          typing and currently type at
+          <a href=" " style="color: rgb(179, 245, 185)">100 WPM</a> .
+        </p>
+      </div>
+
+      <div class="projects-section">
+        <h2>My Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <h3>AllTools</h3>
+            <p>AI-powered tools hub made with MERN stack.</p>
+          </div>
+          <div class="project-card">
+            <h3>Chatify</h3>
+            <p>Realtime chat app using Socket.io + MongoDB.</p>
+          </div>
+          <div class="project-card">
+            <h3>Portfolio 3D</h3>
+            <p>Animated portfolio card using HTML, CSS & JS.</p>
+          </div>
+        </div>
+      </div>
 
       <div class="card-icons">
         <a href="mail.com" target="_blank" class="icon-container">
           <img src="Assets/mail.png" alt="Mail" />
           <span class="icon-text">Email</span>
         </a>
+
         <a href="https://youtube.com" target="_blank" class="icon-container">
           <img src="Assets/projects-icon.png" alt="Projects" />
           <span class="icon-text">Projects</span>
         </a>
+
         <a href="resume.pdf" target="_blank" class="icon-container">
           <img src="Assets/resume-icon.png" alt="Resume" />
           <span class="icon-text">Resume</span>
         </a>
       </div>
     </div>
+
     <div class="project-popup" id="projectPopup">
       <div class="project-content">
         <span class="close-btn" id="closePopup">&times;</span>
-        <h2>My Project </h2>
+        <h2>My Project — AllTools</h2>
         <p>
-       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, in!
+          A productivity hub where you can access 30+ AI tools, utilities, and
+          web apps — all in one place. Built with the MERN stack + Tailwind +
+          Shadcn/UI.
         </p>
         <img src="Assets/project-preview.jpg" alt="Project Preview" />
       </div>

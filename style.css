@@ -1,4 +1,4 @@
- * {
+      * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
@@ -195,21 +195,30 @@
       }
 
       body {
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: #000000;
-        font-family: "Inter", sans-serif;
-        perspective: 1000px;
-        overflow: hidden;
-       
-        background-image: url("Assets/BG-Texture.jpg");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-      }
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Inter", sans-serif;
+    perspective: 1000px;
+    overflow: hidden;
+    background: black; /* fallback */
+    position: relative; /* required for ::before */
+}
+
+/* Blurred background */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0; /* top:0; right:0; bottom:0; left:0; */
+    background-image: url("Assets/BgImg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(8px); /* adjust blur amount */
+    z-index: -1; /* behind everything */
+}
+
 
       
       .project-popup {

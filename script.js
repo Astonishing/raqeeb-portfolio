@@ -1,7 +1,7 @@
     const card = document.getElementById("card");
      
       const projectsBtn =
-        document.querySelector('.card-icons a[href*="youtube"]') ||
+        document.querySelector('.card-icons a[href*="raqeeb"]') ||
         document.querySelector('.card-icons .icon-container');
       
       const intro = document.querySelector(".intro");

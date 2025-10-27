@@ -27,20 +27,55 @@
       <div class="intro">
         <h2>I'm Raqeeb</h2>
         <p style="color: #000000; font-weight: 200">
-          A Full-stack Web Developer and Bug Hunter who loves building and
-          breaking things. I often do competitive programming and I also enjoy
-          typing and currently type at
-          <a href=" " style="color: rgb(179, 245, 185)">100 WPM</a> .
+          A 17 Year old Full-stack Web Developer and Bug Hunter who loves
+          building and breaking things. I often do competitive programming and I
+          also enjoy typing and currently type around
+          <a
+            href="https://monkeytype.com/profile/raqeb"
+            style="color: rgb(179, 245, 185)"
+            target="_blank"
+            >90 WPM</a
+          >
+          .
         </p>
       </div>
 
       <div class="projects-section">
         <h2>My Projects</h2>
+        <div class="filter-bar">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="web">Web Dev</button>
+          <button class="filter-btn" data-filter="game">Game Dev</button>
+          <button class="filter-btn" data-filter="ai">AI / Tools</button>
+        </div>
+
         <div class="projects-grid">
-          <div class="project-card">
+          <div class="project-card" data-category="web">
             <h3>AllTools</h3>
             <p>AI-powered tools hub made with MERN stack.</p>
           </div>
+
+          <div class="project-card" data-category="web">
+            <h3>Chatify</h3>
+            <p>Realtime chat app using Socket.io + MongoDB.</p>
+          </div>
+
+          <div class="project-card" data-category="game">
+            <h3>Pixel Rush</h3>
+            <p>2D platformer built with Phaser.js.</p>
+          </div>
+
+          <div class="project-card" data-category="ai">
+            <h3>SmartSummarizer</h3>
+            <p>AI text summarizer using Python & OpenAI API.</p>
+          </div>
+        </div>
+
+        <div class="projects-grid">
+          <a class="project-card">
+            <h3>AllTools</h3>
+            <p>AI-powered tools hub made with MERN stack.</p>
+          </a>
           <div class="project-card">
             <h3>Chatify</h3>
             <p>Realtime chat app using Socket.io + MongoDB.</p>
@@ -82,8 +117,6 @@
         <img src="Assets/project-preview.jpg" alt="Project Preview" />
       </div>
     </div>
-
-
 
     <!--  js connection -->
     <script src="script.js"></script>
